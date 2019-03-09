@@ -53,13 +53,15 @@ submit_xpath = "/html/body/div/div[2]/form/div[1]/div[1]/span[2]/input"
 # counter
 i = 1
 while(True):
-    '''
+    driver.switch_to.default_content()
+    driver.switch_to.frame('firstF')
+    driver.switch_to.frame('ILec')
     submit_button = driver.find_elements_by_xpath(submit_xpath)[0]
     submit_button.click()
-    '''
 
     # request
-    html = driver.execute_script("""return document.getElementsByTagName('frame')['firstF'].contentDocument.getElementsByTagName('frame')["ILec"].contentDocument.getElementsByTagName('table')[0].innerHTML""")
+    #html = driver.execute_script("""return document.getElementsByTagName('frame')['firstF'].contentDocument.getElementsByTagName('frame')["ILec"].contentDocument.getElementsByTagName('table')[0].innerHTML""")
+    html = driver.execute_script("""return document.getElementsByTagName('table')[0].innerHTML""")
 
     f = open('output.html', 'w')
     f.write(html)
