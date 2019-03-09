@@ -1,11 +1,14 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
 BeautifulSoup	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^from bs4 import BeautifulSoup$/;"	i	language:Python
+compare_course_list	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^def compare_course_list(prev_list, curr_list):$/;"	f	language:Python
+course_list	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^    course_list = extract(html)$/;"	v	language:Python
 driver	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^driver = webdriver.Chrome()$/;"	v	language:Python
-extract	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^def extract():$/;"	f	language:Python
-f	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^    f = open('output.html', 'w')$/;"	v	language:Python
+extract	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^def extract(html):$/;"	f	language:Python
 f	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^f = open('wishlist.txt')$/;"	v	language:Python
 filter_courses	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^def filter_courses(wishlist):$/;"	f	language:Python
 i	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^i = 1$/;"	v	language:Python
+prev_list	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^    prev_list = course_list$/;"	v	language:Python
+prev_list	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^prev_list = [[]]$/;"	v	language:Python
 re	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^import re$/;"	i	language:Python
 sleep	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^from time import sleep$/;"	i	language:Python
 submit_button	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^    submit_button = driver.find_elements_by_xpath(submit_xpath)[0]$/;"	v	language:Python
