@@ -1,0 +1,27 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+BeautifulSoup	/Users/dqmacair/praclang/project/crawler_sugang/extract.py	/^from bs4 import BeautifulSoup$/;"	i	language:Python
+BeautifulSoup	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^from bs4 import BeautifulSoup$/;"	i	language:Python
+driver	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^driver = webdriver.Chrome()$/;"	v	language:Python
+driver	/Users/dqmacair/praclang/project/crawler_sugang/open.py	/^driver = webdriver.Chrome()$/;"	v	language:Python
+extract	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^def extract():$/;"	f	language:Python
+f	/Users/dqmacair/praclang/project/crawler_sugang/extract.py	/^f = open('course_list.txt', 'w')$/;"	v	language:Python
+f	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^    f = open('output.html', 'w')$/;"	v	language:Python
+f	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^f = open('wishlist.txt')$/;"	v	language:Python
+f	/Users/dqmacair/praclang/project/crawler_sugang/request.py	/^f = open('output.html', 'w')$/;"	v	language:Python
+filter_courses	/Users/dqmacair/praclang/project/crawler_sugang/filter_courses.py	/^def filter_courses(wishlist):$/;"	f	language:Python
+filter_courses	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^def filter_courses(wishlist):$/;"	f	language:Python
+html	/Users/dqmacair/praclang/project/crawler_sugang/extract.py	/^html = open('output.html', 'r')$/;"	v	language:Python
+i	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^i = 1$/;"	v	language:Python
+j	/Users/dqmacair/praclang/project/crawler_sugang/extract.py	/^    j = i % 19$/;"	v	language:Python
+l	/Users/dqmacair/praclang/project/crawler_sugang/extract.py	/^        l = re_rm_ws.sub('', l)$/;"	v	language:Python
+re	/Users/dqmacair/praclang/project/crawler_sugang/extract.py	/^import re$/;"	i	language:Python
+re	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^import re$/;"	i	language:Python
+re_rm_ws	/Users/dqmacair/praclang/project/crawler_sugang/extract.py	/^re_rm_ws = re.compile('\\s*')$/;"	v	language:Python
+sleep	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^from time import sleep$/;"	i	language:Python
+soup	/Users/dqmacair/praclang/project/crawler_sugang/extract.py	/^soup = BeautifulSoup(html, "html.parser")$/;"	v	language:Python
+submit_xpath	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^submit_xpath = "\/html\/body\/div\/div[2]\/form\/div[1]\/div[1]\/span[2]\/input"$/;"	v	language:Python
+tds	/Users/dqmacair/praclang/project/crawler_sugang/extract.py	/^tds = soup.find_all('td')$/;"	v	language:Python
+tds	/Users/dqmacair/praclang/project/crawler_sugang/extract.py	/^tds = [i.text for i in tds]$/;"	v	language:Python
+webdriver	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^from selenium import webdriver$/;"	i	language:Python
+webdriver	/Users/dqmacair/praclang/project/crawler_sugang/open.py	/^from selenium import webdriver$/;"	i	language:Python
+wishlist	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^wishlist = []$/;"	v	language:Python
