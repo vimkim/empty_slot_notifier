@@ -8,10 +8,11 @@ f	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^f = open('wishlist.t
 filter_courses	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^def filter_courses(wishlist):$/;"	f	language:Python
 i	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^i = 1$/;"	v	language:Python
 prev_list	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^    prev_list = course_list$/;"	v	language:Python
-prev_list	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^prev_list = [[]]$/;"	v	language:Python
+prev_list	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^prev_list = []$/;"	v	language:Python
 re	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^import re$/;"	i	language:Python
 sleep	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^from time import sleep$/;"	i	language:Python
 submit_button	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^    submit_button = driver.find_elements_by_xpath(submit_xpath)[0]$/;"	v	language:Python
 submit_xpath	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^submit_xpath = "\/html\/body\/div\/div[2]\/form\/div[1]\/div[1]\/span[2]\/input"$/;"	v	language:Python
+sys	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^import sys$/;"	i	language:Python
 webdriver	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^from selenium import webdriver$/;"	i	language:Python
 wishlist	/Users/dqmacair/praclang/project/crawler_sugang/main.py	/^wishlist = []$/;"	v	language:Python

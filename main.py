@@ -1,4 +1,5 @@
 from time import sleep
+import sys
 from bs4 import BeautifulSoup
 import re
 
@@ -15,21 +16,25 @@ def extract(html):
     re_rm_ws = re.compile('\s*')
 
     # f = open('course_list.txt', 'w')
-    course_list = [[]]
+    course_list = ['']
     for i,l in enumerate(tds):
         j = i % 19
         if j == 1 or j == 2 or j == 5:
             # print(l.strip(), end='/', file=f)
-            course_list[-1].append(l.strip())
+            course_list[-1]+= l.strip() + '/'
         elif j == 4:
             l = re_rm_ws.sub('', l)
-            course_list[-1].append(l)
+            course_list[-1]+= l + '/'
             # print(l, end='/', file=f)
         elif j == 18:
             # print(l.strip(), file=f)
-            course_list[-1].append(l.strip())
-            course_list.append([])
+            course_list[-1]+=l.strip()
+            course_list.append('')
     del course_list[-1]
+
+    with open('course_list.txt', 'w') as f:
+        for i in course_list:
+            f.write(i + '\n')
     return course_list
 
 
@@ -57,21 +62,25 @@ input("press enter after finishing login")
 submit_xpath = "/html/body/div/div[2]/form/div[1]/div[1]/span[2]/input"
 
 def compare_course_list(prev_list, curr_list):
-    if len(prev_list[0]) == 0:
-        for course in curr_list:
-            print(course)
+    if len(prev_list) != len(curr_list):
+        print("the lens are different")
         return
 
     change_count = 0
     for i, (j, k) in enumerate(zip(prev_list, curr_list)):
         if j[-1] != k[-1]:
-            print('O:', j, "changed to", k[-1])
+            print(j[-1], "is different from",  k[-1])
+            print(j, "\nchanged to\n", k)
             change_count += 1
+        else:
+            pass
     if change_count == 0:
         print('nothing changed')
     elif change_count >= 1:
+        driver2 = webdriver.Chrome()
+        driver2.get("https://www.vim.org/")
         print(' ALERT ALERT ALERT ')
-        print(' ALERT ALERT ALERT ')
+        print("changed:", change_count)
         print(' ALERT ALERT ALERT ')
 
 
@@ -79,7 +88,9 @@ def compare_course_list(prev_list, curr_list):
 
 # counter
 i = 1
-prev_list = [[]]
+
+prev_list = []
+
 while(True):
     driver.switch_to.default_content()
     driver.switch_to.frame('firstF')
